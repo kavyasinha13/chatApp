@@ -19,7 +19,7 @@ const messageSchema = new mongoose.Schema(
       type: String,
     },
     seen: {
-      type: boolean,
+      type: Boolean,
       default: false,
     },
   },
