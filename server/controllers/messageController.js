@@ -82,7 +82,7 @@ export const sendMessage = async (req, res) => {
   try {
     const { text } = req.body;
     const image = req.file?.path;
-    const receiverId = req.params._id;
+    const receiverId = req.params.id;
     const senderId = req.user._id;
 
     let imageUrl;
