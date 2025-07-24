@@ -67,9 +67,8 @@ export const updateProfile = async (req, res) => {
     //console.log("req.body:", req.body);
     //console.log("req.file:", req.file);
 
-    const { bio, fullName } = req.body;
+    const { profilePic, bio, fullName } = req.body;
 
-    const profilePic = req.file?.path;
     const userId = req.user._id;
 
     let updatedUser;
